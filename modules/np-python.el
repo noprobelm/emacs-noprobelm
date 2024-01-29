@@ -20,9 +20,7 @@
                               :plugins ( :pycodestyle (:enabled nil)
                                          :mccabe (:enabled nil)
                                          :flake8 (:enabled t))))))
-  (org-babel-do-load-languages
-   'org-babel-load-languages
-   '((python . t))))
+  )
 
 
 (use-package pyvenv-auto
