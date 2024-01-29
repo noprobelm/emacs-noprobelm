@@ -3,12 +3,13 @@
 ;;; Code:
 (use-package projectile
   :straight t
-  :config
-  (projectile-mode 1)
+  :init
   (setq projectile-completion-system 'helm)
   (setq projectile-indexing-method 'alien)
-  (setq projectile-sort-order 'recently-active))
-
+  (setq projectile-sort-order 'recently-active)
+  :config
+  (projectile-mode 1)
+)
 (use-package helm-projectile
   :straight t
   :after projectile
