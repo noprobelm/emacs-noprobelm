@@ -69,3 +69,5 @@ tramp
 tree-sitter
 
 projects
+
+local.el
