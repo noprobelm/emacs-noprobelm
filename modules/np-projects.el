@@ -10,6 +10,7 @@
   :config
   (projectile-mode 1)
 )
+
 (use-package helm-projectile
   :straight t
   :after projectile
