@@ -63,18 +63,6 @@
     "v" 'vterm
     ";" 'ielm
 
-    ;; Org Roam
-    "r" '(:ignore t :wk "Org Roam")
-    "r b" '(org-roam-buffer-toggle :wk "Show backlinks")
-    "r f" '(org-roam-node-find :wk "Open node")
-    "r i" '(org-roam-node-insert :wk "Insert or create node")
-    "r r" '(org-roam-ref-add :wk "Add reference")
-    "r a" '(org-roam-alias-add :wk "Add alias to node")
-    "r x" '(org-roam-capture :wk "Org Roam Capture")
-    "r d" '(org-roam-dailies-capture-today "Daily Notes")
-    ;; 'r f' for "Fleeting Notes"
-    "r t" '(org-roam-tag-add :wk "Add tag to node")
-
     ;; Org
     ;; Agenda and time
     "m" '(:ignore t :wk "All things Org")
