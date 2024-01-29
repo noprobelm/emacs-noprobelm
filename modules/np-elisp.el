@@ -1,4 +1,4 @@
-;;; np-org.el --- Modules -*- lexical-binding: t; -*-
+;;; np-elisp.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 (use-package elisp-mode
