@@ -2,11 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package ob-rust
-  :straight t)
+(use-package ob-rust)
 
 (use-package org
-  :straight nil
+  :elpaca nil
   :init
   (setq
    org-agenda-files '("~/workshop/org/")
@@ -28,7 +27,6 @@
    'org-babel-load-languages
    '((python . t)
      (emacs-lisp . t)
-     (rust . t)
      (R . t)
      (C . t)
      (shell . t)
@@ -57,11 +55,7 @@
    '(org-level-7 ((t (:height 130 :extend t :inherit outline-7))))
    ))
 
-(use-package org-wc
-  :straight t)
-
 (use-package org-superstar
-  :straight t
   :config
   (setq org-superstar-headline-bullets-list
 	'(;; Original ones nicked from org-bullets

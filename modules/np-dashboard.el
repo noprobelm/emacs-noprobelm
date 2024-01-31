@@ -3,8 +3,7 @@
 ;;; Code:
 
 (use-package dashboard
-  :straight t
-  :config
+  :init
   ;; Setup post initialization dashboard hooks.
   (dashboard-setup-startup-hook)
 	(setq dashboard-banner-logo-title
@@ -36,7 +35,7 @@
     (switch-to-buffer dashboard-buffer-name))
 
   (setq dashboard-set-navigator t)
-  (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*"))))
+  (setq initial-buffer-choice #'dashboard-open))
 
 (provide 'np-dashboard)
 ;;; np-dashboard.el ends here.

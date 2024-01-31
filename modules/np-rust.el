@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (use-package rustic
-  :straight t
   :after eglot
   :mode ("\\.rs\\'" . rustic-mode)
   :init

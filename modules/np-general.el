@@ -3,7 +3,6 @@
 ;;; Code:
 
 (use-package general
-  :straight t
   :init
   (general-create-definer spc-leader-key
     :states '(normal visual)

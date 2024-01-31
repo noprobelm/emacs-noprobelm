@@ -4,11 +4,11 @@
 (add-to-list 'load-path np/module-dir)
 
 (require 'np-basics)
+(require 'np-wakatime)
 (require 'np-general)
 (require 'np-personal)
 (require 'np-elisp)
 (require 'np-scratch)
-(require 'np-straight)
 (require 'np-completion)
 (require 'np-general)
 (require 'np-evil)

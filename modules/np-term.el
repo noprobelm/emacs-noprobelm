@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (use-package vterm
-  :straight t
   :config
   (setq vterm-always-compile-module t)
   )

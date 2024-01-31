@@ -7,9 +7,9 @@
     (disable-theme i)))
 
 (use-package doom-themes
-  :straight t)
+  :config
+  (load-theme 'doom-vibrant t))
 
-(load-theme 'doom-vibrant t)
 
 (provide 'np-theme)
 ;;; np-theme.el ends here.

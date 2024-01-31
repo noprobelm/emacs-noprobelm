@@ -2,12 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 (use-package helm
-  :straight t
   :config
   (helm-mode 1))
 
 (use-package company
-  :straight t
   :config
   (add-hook 'after-init-hook 'global-company-mode))
 

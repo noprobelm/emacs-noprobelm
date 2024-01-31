@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package python
-  :straight nil
+  :elpaca nil
   :after eglot
   :init
   (add-hook 'python-base-mode-hook #'eglot-ensure)
@@ -19,12 +19,10 @@
                 '((:pylsp . ( :configurationSources ["flake8"]
                               :plugins ( :pycodestyle (:enabled nil)
                                          :mccabe (:enabled nil)
-                                         :flake8 (:enabled t))))))
-  )
+                                         :flake8 (:enabled t)))))))
 
 
 (use-package pyvenv-auto
-  :straight t
   :after python
   :demand t
   :config
@@ -33,15 +31,13 @@
 
 
 (use-package apheleia
-  :straight t
   :after python
   :init
   (add-hook 'python-base-mode-hook #'apheleia-mode)
   (evil-define-key* 'normal python-base-mode-map
     (kbd "<leader> m f") #'("format" . apheleia-format-buffer)))
 
-(use-package poetry
-  :straight t)
+(use-package poetry)
 
 (provide 'np-python)
 ;;; np-python.el ends here.

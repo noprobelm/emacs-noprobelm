@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package treesit
-  :straight nil
+  :elpaca nil
   :commands (treesit-install-language-grammar)
   :init
   ;; https://www.nathanfurnal.xyz/posts/building-tree-sitter-langs-emacs/
@@ -48,7 +48,6 @@
 )
 
 (use-package treesit-auto
-  :straight t
   :custom
   (treesit-auto-install 'prompt)
   :config

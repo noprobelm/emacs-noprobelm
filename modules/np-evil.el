@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (use-package evil
-  :straight t
   :after general
   :init
   (setq evil-want-integration t)
@@ -15,7 +14,6 @@
   )
 
 (use-package evil-collection
-  :straight t
   :init (evil-collection-init)
   :custom (evil-collection-setup-minibuffer t) ;; Enables evil in the minifbuffer
 )

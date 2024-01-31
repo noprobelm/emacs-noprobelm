@@ -3,7 +3,7 @@
 ;;; Code:
 
 (use-package tab-bar
-  :straight nil
+  :elpaca nil
   :init
   (setopt tab-bar-show 1)
   (tab-bar-mode)

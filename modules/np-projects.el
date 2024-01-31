@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (use-package projectile
-  :straight t
   :init
   (setq projectile-completion-system 'helm)
   (setq projectile-indexing-method 'alien)
@@ -12,7 +11,6 @@
 )
 
 (use-package helm-projectile
-  :straight t
   :after projectile
   :init
   (defun np/switch-project ()
@@ -20,7 +18,6 @@
   (add-function :before '(helm-projectile-switch-project) #'tab-bar-new-tab)))
 
 (use-package counsel-projectile
-  :straight t
   :after (projectile org)
   :init
   (setq +org-capture-todo-file "~/workshop/org/todo.org")

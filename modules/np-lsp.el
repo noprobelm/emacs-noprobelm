@@ -3,7 +3,7 @@
 ;;; Code:
 
 (use-package eglot
-  :straight t
+  :requires jsonrpc
   :init
   (setq eglot-stay-out-of '(eldoc))
 

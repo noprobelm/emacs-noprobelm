@@ -2,12 +2,11 @@
 ;;; Commentary:
 ;;; Code:
 (use-package flycheck
-  :straight t
   :config
   :init (global-flycheck-mode)
   )
 (use-package ispell
-  ;; Configure German, Swiss German, and two variants of English.
+  :elpaca nil
   :config
   (setq ispell-program-name "hunspell")
   (setq ispell-dictionary "en_US")
@@ -15,7 +14,6 @@
   )
 
 (use-package flycheck-aspell
-  :straight t
   :after (flycheck ispell)
   :config
   ;; If you want to check TeX/LaTeX/ConTeXt buffers
