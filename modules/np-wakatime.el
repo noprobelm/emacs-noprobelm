@@ -3,7 +3,7 @@
 ;;; Code:
 (use-package wakatime-mode
   :init
-  (setq wakatime-cli "~/.wakatime/wakatime-cli")
+  (setq wakatime-cli-path "~/.wakatime/wakatime-cli")
   :config
   (global-wakatime-mode))
 

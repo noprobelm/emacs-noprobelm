@@ -4,6 +4,7 @@
 (add-to-list 'load-path np/module-dir)
 
 (require 'np-basics)
+(require 'np-tramp)
 (require 'np-wakatime)
 (require 'np-general)
 (require 'np-personal)

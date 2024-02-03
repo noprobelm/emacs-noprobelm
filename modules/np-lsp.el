@@ -3,7 +3,7 @@
 ;;; Code:
 
 (use-package eglot
-  :requires jsonrpc
+  :elpaca nil
   :init
   (setq eglot-stay-out-of '(eldoc))
 
