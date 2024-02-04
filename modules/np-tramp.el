@@ -2,10 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 (use-package tramp
-  ;; :elpaca nil
+  :elpaca nil
   :init
+  (setq debug-ignored-errors
+        (cons 'remote-file-error debug-ignored-errors))
+
   (setopt tramp-default-method "ssh")
-  (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
   (setopt tramp-inline-compress-start-size 1000000)
   (setopt tramp-verbose 1)
   (setopt tramp-ssh-controlmaster-options
