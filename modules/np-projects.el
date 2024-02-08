@@ -5,8 +5,7 @@
   :init
   (bufler-mode 1)
   :config
-  (custom-set-variables '(bufler-workspace-prefix-abbreviation '("\\`Workspace: " . "")))
-  )
+  (custom-set-variables '(bufler-workspace-prefix-abbreviation '("\\`Workspace: " . ""))))
 
 (use-package tab-bar
   :elpaca nil
@@ -20,9 +19,7 @@
   (defun np/close-tab ()
     (interactive)
     (if (project-current) (project-kill-buffers))
-    (tab-bar-close-tab))
-  )
-
+    (tab-bar-close-tab)))
 
 (use-package projectile
   :init
@@ -42,9 +39,7 @@
   (projectile-mode 1))
 
 (use-package helm-projectile
-  :after projectile
-  :init
-  )
+  :after projectile)
 
 (use-package counsel-projectile
   :after (projectile org)
@@ -70,8 +65,7 @@
 	   "* TODO %?%^g\n\ntodo recorded at %U\n\n%a")
 	  ("g" "General Project todo" entry
 	   (file+headline +org-capture-projects-file "General TODO items")
-	   "* TODO %?\n\ntodo recorded at %U")
-	  )))
+	   "* TODO %?\n\ntodo recorded at %U"))))
 
 (provide 'np-projects)
 ;;; np-projects.el ends here.
