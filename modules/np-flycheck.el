@@ -2,9 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 (use-package flycheck
-  :config
-  :init (global-flycheck-mode)
-  )
+  :init
+  (global-flycheck-mode))
 
 (use-package flycheck-eglot
   :after flycheck
