@@ -22,5 +22,8 @@
   (setq kind-icon-default-face 'corfu-default)
   (add-to-list 'corfu-margin-formatters #'kind-icon-margin-formatter))
 
+(use-package all-the-icons
+  :demand t)
+
 (provide 'np-completion)
 ;;; np-completion.el ends here.
