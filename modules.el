@@ -19,7 +19,7 @@
 (require 'np-magit)
 (require 'np-term)
 (require 'np-theme)
-(require 'np-checker)
+(require 'np-flycheck)
 (require 'np-treesitter)
 (require 'np-python)
 (require 'np-rust)
