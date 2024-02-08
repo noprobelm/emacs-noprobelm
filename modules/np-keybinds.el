@@ -1,4 +1,4 @@
-;;; np-general.el --- Modules -*- lexical-binding: t; -*-
+;;; np-keybinds.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -110,5 +110,5 @@
     "/" '(comment-dwim :wk "Toggle Comment")
     ))
 
-(provide 'np-general)
-;;; np-general.el ends here.
+(provide 'np-keybinds)
+;;; np-keybinds.el ends here.
