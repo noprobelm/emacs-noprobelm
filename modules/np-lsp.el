@@ -23,5 +23,6 @@
                       :textDocument/rename `(,@(eglot--TextDocumentPositionParams)
                                              :newName ,newname))
      current-prefix-arg)))
+
 (provide 'np-lsp)
 ;;; np-lsp.el ends here.
