@@ -73,3 +73,5 @@ projects
 local.el
 
 elpaca/
+
+.cache/

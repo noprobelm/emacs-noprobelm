@@ -31,5 +31,4 @@
 (require 'np-tab-bar)
 (require 'np-environment)
 (require 'np-lsp)
-(require 'np-all-the-icons)
 ;;; modules.el ends here.
