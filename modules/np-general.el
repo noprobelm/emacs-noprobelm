@@ -94,13 +94,13 @@
 
     ;; Open things
     "." '(helm-find-files :wk "Open File")
-    "," '(switch-to-buffer :wk "Open Existing Project Buffer")
+    "," '(bufler-switch-buffer :wk "Open Existing Project Buffer")
 
-    "TAB n" '(tab-bar-new-tab :wk "New Tab")
+    "TAB n" '(np/new-tab :wk "New Tab")
     "TAB TAB" '(tab-list :wk "Show Tabs")
     "TAB h" '(tab-bar-switch-to-prev-tab :wk "Previous Tab")
     "TAB l" '(tab-bar-switch-to-next-tab :wk "Next Tab")
-    "TAB d" '(close-tab :wk "Close Current Tab")
+    "TAB d" '(tab-bar-close-tab :wk "Close Current Tab")
 
     "c R" '(eglot-rename :wk "Rename Symbol")
     "c a" '(eglot-code-actions :wk "Execute Action")

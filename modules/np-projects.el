@@ -1,21 +1,50 @@
 ;;; np-projects.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
+(use-package bufler
+  :init
+  (bufler-mode 1)
+  :config
+  (custom-set-variables '(bufler-workspace-prefix-abbreviation '("\\`Workspace: " . "")))
+  )
+
+(use-package tab-bar
+  :elpaca nil
+  :init
+  (tab-bar-mode)
+  (tab-bar-rename-tab "Default" 1)
+  :config
+  (defun np/new-tab ()
+    (interactive)
+    (tab-bar-new-tab-to -1))
+  (defun np/close-tab ()
+    (interactive)
+    (if (project-current) (project-kill-buffers))
+    (tab-bar-close-tab))
+  )
+
+
 (use-package projectile
   :init
   (setq projectile-completion-system 'helm)
   (setq projectile-indexing-method 'alien)
   (setq projectile-sort-order 'recently-active)
+  (defun np/switch-project ()
+    (interactive)
+    (let ((selection (helm :sources (helm-build-sync-source "Projectile Projects"
+                                       :candidates projectile-known-projects
+                                       :fuzzy-match t)
+                     :buffer "*helm test*")))
+      (tab-bar-new-tab-to -1)
+      (projectile-switch-project-by-name selection))
+  (bufler-workspace-focus-buffer (current-buffer)))
   :config
-  (projectile-mode 1)
-)
+  (projectile-mode 1))
 
 (use-package helm-projectile
   :after projectile
   :init
-  (defun np/switch-project ()
-  (interactive)
-  (add-function :before '(helm-projectile-switch-project) #'tab-bar-new-tab)))
+  )
 
 (use-package counsel-projectile
   :after (projectile org)
