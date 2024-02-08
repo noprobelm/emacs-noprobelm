@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package rustic
-  :after eglot
+  :after (eglot corfu)
   :mode ("\\.rs\\'" . rustic-mode)
   :init
   (setq rustic-lsp-client 'eglot))
