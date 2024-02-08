@@ -38,6 +38,5 @@
 				  "Org" ("--add-filter" "url")
 				  (org-mode)))
 
-
 (provide 'np-flycheck)
 ;;; np-flycheck.el ends here.
