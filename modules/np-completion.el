@@ -25,5 +25,16 @@
 (use-package all-the-icons
   :demand t)
 
+(use-package all-the-icons-completion
+  :demand t
+  :after all-the-icons
+  :init
+  (all-the-icons-completion-mode))
+
+(use-package all-the-icons-dired
+  :after all-the-icons
+  :init
+  (add-hook 'dired-mode-hook #'all-the-icons-dired-mode))
+
 (provide 'np-completion)
 ;;; np-completion.el ends here.
