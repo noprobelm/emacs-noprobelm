@@ -40,5 +40,5 @@
 				  (org-mode)))
 
 
-(provide 'np-checker)
+(provide 'np-flycheck)
 ;;; np-flycheck.el ends here.
