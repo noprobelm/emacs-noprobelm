@@ -1,13 +1,17 @@
 ;;; np-flycheck.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
+
 (use-package flycheck
   :init
   (global-flycheck-mode))
 
 (use-package flycheck-eglot
   :after flycheck
-  :hook (flycheck-mode . flycheck-eglot-mode))
+  :hook (eglot-mode . flycheck-eglot-mode))
+
+(use-package flycheck-rust
+  :hook (flycheck-mode . flycheck-rust-setup))
 
 (use-package flymake
   :elpaca nil
