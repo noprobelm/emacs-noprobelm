@@ -8,7 +8,7 @@
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-vibrant t))
+  (load-theme 'doom-gruvbox t))
 
 
 (provide 'np-theme)
