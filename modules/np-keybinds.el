@@ -108,7 +108,12 @@
     "c i" '(eglot-code-action-inline :wk "Inline")
     "c f" '(eglot-format-buffer :wk "Format Buffer")
     "/" '(comment-dwim :wk "Toggle Comment")
-    ))
+    )
+
+  ;; Copilot completion
+  (general-define-key
+   :keymaps '(normal copilot-completion-map)
+   "TAB" 'copilot-accept-completion))
 
 (provide 'np-keybinds)
 ;;; np-keybinds.el ends here.
