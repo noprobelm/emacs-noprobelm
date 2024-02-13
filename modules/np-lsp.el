@@ -3,7 +3,6 @@
 ;;; Code:
 
 (use-package eglot
-  :elpaca nil
   :init
   (setq eglot-stay-out-of '(eldoc))
 
