@@ -31,4 +31,5 @@
 (require 'np-tab-bar)
 (require 'np-environment)
 (require 'np-lsp)
+(require 'np-copilot)
 ;;; modules.el ends here.
