@@ -2,11 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-;; (use-package editorconfig)
-
-
-;; (add-to-list 'load-path "/home/noprobelm/.emacs.noprobelm/elpaca/repos/copilot/")
-
 (use-package jsonrpc
   :demand t
   :elpaca (:package "jsonrpc"
