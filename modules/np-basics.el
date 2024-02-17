@@ -13,9 +13,9 @@
 (setq scroll-conservatively 101)
 (global-hl-line-mode 1)
 (add-hook 'prog-mode-hook
-	  (lambda () (setq display-line-numbers 'relative)))
+	  (lambda () (setq display-line-numbers 'absolute)))
 (add-hook 'text-mode-hook
-	  (lambda () (setq display-line-numbers 'relative)))
+	  (lambda () (setq display-line-numbers 'absolute)))
 (add-hook 'org-mode-hook
 	  (lambda () (setq display-line-numbers 'absolute)))
 

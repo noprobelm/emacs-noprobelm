@@ -32,4 +32,5 @@
 (require 'np-environment)
 (require 'np-lsp)
 (require 'np-copilot)
+(require 'np-modeline)
 ;;; modules.el ends here.
