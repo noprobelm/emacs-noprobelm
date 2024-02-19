@@ -2,9 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package jsonrpc
-  :elpaca (:repo "https://github.com/emacs-mirror/emacs")
-  :ensure t)
+(use-package jsonrpc :ensure t)
 
   (use-package s
     :elpaca (:host github :repo "magnars/s.el");; :files ("s.el"))
