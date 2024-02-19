@@ -1,7 +1,6 @@
 ;;; np-which-key.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
-
 (use-package which-key
   :config
   (which-key-mode 1))
