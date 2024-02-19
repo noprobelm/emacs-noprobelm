@@ -1,7 +1,6 @@
 ;;; np-lsp.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
-
 (use-package eglot
   :init
   (setq eglot-stay-out-of '(eldoc))
