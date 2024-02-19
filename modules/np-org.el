@@ -2,7 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package ob-rust)
+(use-package
+  ob-rust)
 
 (use-package org
   :elpaca nil
