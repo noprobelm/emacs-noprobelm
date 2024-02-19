@@ -24,7 +24,7 @@
 (require 'np-python)
 (require 'np-rust)
 (require 'np-dashboard)
-(require 'np-helpful)
+(require 'np-help)
 (require 'np-which-key)
 (require 'np-smartparens)
 (require 'np-yaml)
