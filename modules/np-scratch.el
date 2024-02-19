@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (setq initial-major-mode 'org-mode)
+
 (setq initial-scratch-message "\
 * Emacs Lisp
 #+BEGIN_SRC emacs-lisp :session scratch
