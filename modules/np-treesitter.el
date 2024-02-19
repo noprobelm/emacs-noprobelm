@@ -45,7 +45,7 @@
           (rjsx-mode       . tsx-ts-mode)
           (typescript-mode . typescript-ts-mode)
           (yaml-mode       . yaml-ts-mode)))
-)
+  )
 
 (use-package treesit-auto
   :custom
