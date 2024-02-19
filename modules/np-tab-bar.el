@@ -12,7 +12,8 @@
   :config
   (defun close-tab ()
     (interactive)
-    (if (project-current) (project-kill-buffers))
+    (if (project-current)
+        (project-kill-buffers))
     (tab-bar-close-tab)))
 
 (provide 'np-tab-bar)
