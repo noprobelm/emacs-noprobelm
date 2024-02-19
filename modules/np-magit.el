@@ -1,7 +1,8 @@
 ;;; np-magit.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
-(use-package magit)
+(use-package
+  magit)
 
 (use-package diff-hl
   :hook
