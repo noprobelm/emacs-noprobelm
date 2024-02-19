@@ -3,18 +3,8 @@
 ;;; Code:
 
 (use-package jsonrpc
-  :demand t
-  :elpaca (:package "jsonrpc"
-  ;; Inherited from declaration.
-  :depth 1
-  :inherit t
-  :protocol https
-  :source "GNU ELPA"
-  :files ("lisp/jsonrpc.el" (:exclude
-			     ".git"))
-  :branch "master"
-  :local-repo "jsonrpc"
-  :repo "https://github.com/emacs-mirror/emacs"))
+  :elpaca (:repo "https://github.com/emacs-mirror/emacs")
+  :ensure t)
 
   (use-package s
     :elpaca (:host github :repo "magnars/s.el");; :files ("s.el"))
