@@ -10,6 +10,5 @@
   :config
   (load-theme 'doom-gruvbox t))
 
-
 (provide 'np-theme)
 ;;; np-theme.el ends here.
