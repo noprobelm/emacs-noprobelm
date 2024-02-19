@@ -49,8 +49,7 @@
 (use-package outline
   :after evil
   :elpaca nil
-  :hook (emacs-lisp-mode . outline-minor-mode)
-)
+  :hook (emacs-lisp-mode . outline-minor-mode))
 
 (provide 'np-elisp)
 ;;; np-elisp.el ends here.
