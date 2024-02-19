@@ -4,15 +4,16 @@
 
 (use-package jsonrpc :ensure t)
 
-  (use-package s
-    :elpaca (:host github :repo "magnars/s.el");; :files ("s.el"))
-    :ensure t)
+(use-package s
+  :elpaca (:host github :repo "magnars/s.el")
+  ;; :files ("s.el"))
+  :ensure t)
 
-  (use-package dash
+(use-package dash
     :elpaca (:host github :repo "magnars/dash.el");; :files ("dash.el"))
     :ensure t)
 
-  (use-package editorconfig
+(use-package editorconfig
     :ensure t
     :config
     (editorconfig-mode 1))
