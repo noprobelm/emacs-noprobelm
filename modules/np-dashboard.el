@@ -4,13 +4,13 @@
 
 (use-package dashboard
   :init
-  ;; Setup post initialization dashboard hooks.
   (dashboard-setup-startup-hook)
-
+  (setq initial-buffer-choice #'dashboard-open)
   (setq
    dashboard-banner-logo-title
    (format "Emacs ready in %.2f seconds with %d garbage collections."
-           (float-time (time-subtract after-init-time before-init-time)) gcs-done)
+           (float-time (time-subtract after-init-time before-init-time))
+           gcs-done)
    dashboard-startup-banner "~/.emacs.noprobelm/banners/ue-colorful.png"
    dashboard-image-banner-max-height 600
    dashboard-image-banner-max-width 900
@@ -22,8 +22,6 @@
                      (bookmarks . 5)
 		     (projects . 5)
 		     (agenda . 5)))
-
-  (setq initial-buffer-choice #'dashboard-open)
 
   (defun dashboard-refresh-buffer-silent ()
     "Refresh buffer in background."
