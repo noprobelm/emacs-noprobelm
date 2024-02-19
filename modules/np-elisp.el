@@ -31,7 +31,6 @@
   :after elisp-mode)
 
 (use-package flycheck-package
-  :disabled
   :after elisp-mode)
 
 (use-package erefactor
