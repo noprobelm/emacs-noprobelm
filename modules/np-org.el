@@ -9,7 +9,7 @@
   :elpaca nil
   :init
   (setq
-   org-agenda-files '("~/workshop/org/")
+   org-agenda-files (list (expand-file-name "org/" np/workshop-dir))
    org-startup-indented t
    org-return-follows-link t
    org-display-inline-images t
