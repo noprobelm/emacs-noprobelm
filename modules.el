@@ -28,7 +28,6 @@
 (require 'np-which-key)
 (require 'np-smartparens)
 (require 'np-yaml)
-(require 'np-tab-bar)
 (require 'np-environment)
 (require 'np-lsp)
 (require 'np-copilot)
