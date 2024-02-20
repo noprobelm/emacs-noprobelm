@@ -4,6 +4,7 @@
 (use-package bufler
   :init
   (bufler-mode 1)
+
   :config
   (custom-set-variables '(bufler-workspace-prefix-abbreviation '("\\`Workspace: " . ""))))
 
@@ -12,14 +13,26 @@
   :init
   (tab-bar-mode)
   (tab-bar-rename-tab "Default" 1)
+  (setq tab-bar-auto-width nil)
   :config
   (defun np/new-tab ()
     (interactive)
     (tab-bar-new-tab-to -1))
+
   (defun np/close-tab ()
     (interactive)
     (if (project-current) (project-kill-buffers))
-    (tab-bar-close-tab)))
+    (tab-bar-close-tab))
+
+  (defun np/rename-tab ()
+    (let ((project-name (concat (projectile-project-name) ": "))
+          (file-name (file-name-nondirectory buffer-file-name)))
+      (put-text-property 0 (length project-name) 'face 'font-lock-keyword-face project-name)
+      (put-text-property 0 (length file-name) 'face 'font-lock-function-name-face file-name)
+      (tab-rename (concat project-name file-name))))
+
+  (add-hook 'find-file-hook 'np/rename-tab)
+  (advice-add 'bufler-switch-buffer :after (lambda (&rest _) (np/rename-tab))))
 
 (use-package projectile
   :init
@@ -32,11 +45,10 @@
                                       :candidates projectile-known-projects
                                       :fuzzy-match t)
                            :buffer "*helm test*")))
-
       (when selection (tab-bar-new-tab-to -1)
-                           (projectile-switch-project-by-name selection)
-                           (bufler-workspace-focus-buffer (current-buffer))
-                           )))
+            (projectile-switch-project-by-name selection)
+            (bufler-workspace-focus-buffer (current-buffer))
+            )))
   :config
   (projectile-mode 1))
 
