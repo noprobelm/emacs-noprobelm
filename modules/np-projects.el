@@ -59,9 +59,9 @@
 (use-package counsel-projectile
   :after (projectile org)
   :init
-  (setq +org-capture-todo-file "~/workshop/org/todo.org")
-  (setq +org-capture-ideas-file "~/workshop/org/ideas.org")
-  (setq +org-capture-projects-file "~/workshop/org/projects.org")
+  (setq +org-capture-notes-file (expand-file-name "org/notes.org" np/workshop-dir))
+  (setq +org-capture-ideas-file (expand-file-name "org/ideas.org" np/workshop-dir))
+  (setq +org-capture-projects-file (expand-file-name "org/projects.org" np/workshop-dir))
   (setq counsel-projectile-org-capture-templates
  	'(("w" "Work todo"
 	   entry (id "0865f88a-3f18-4cb7-b1a1-2fc127e3d607")
