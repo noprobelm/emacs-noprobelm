@@ -13,6 +13,7 @@
   (tab-bar-mode)
   (tab-bar-rename-tab "Default" 1)
   (setq tab-bar-auto-width nil)
+  (custom-set-faces '(tab-bar-tab ((t (:background "gray20" :foreground "#ebdbb2" :box nil)))))
   :config
   (defun np/new-tab ()
     (interactive)
@@ -31,7 +32,8 @@
       (tab-rename (concat project-name file-name))))
 
   (add-hook 'find-file-hook 'np/rename-tab)
-  (advice-add 'bufler-switch-buffer :after (lambda (&rest _) (np/rename-tab))))
+  (advice-add 'bufler-switch-buffer :after (lambda (&rest _) (np/rename-tab)))
+  (advice-add 'np/switch-project :after (lambda (&rest _) (np/rename-tab))))
 
 (use-package projectile
   :init
