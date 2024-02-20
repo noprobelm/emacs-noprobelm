@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (defvar my-laptop-p (equal (system-name) "framework"))
+(defconst np/workshop-dir (expand-file-name "~/workshop/"))
 
 (setq inhibit-startup-message t)
 (setq backup-directory-alist `(("." . "~/.saves")))
