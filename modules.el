@@ -32,4 +32,5 @@
 (require 'np-lsp)
 (require 'np-copilot)
 (require 'np-modeline)
+(require 'np-popper)
 ;;; modules.el ends here.
