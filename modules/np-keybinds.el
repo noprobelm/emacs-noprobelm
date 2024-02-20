@@ -59,7 +59,7 @@
 
 
     ;; Terminals & Interpreters
-    "v" 'vterm
+    "v t" 'vterm
     ";" 'ielm
 
     ;; Org
