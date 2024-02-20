@@ -4,7 +4,6 @@
 (use-package bufler
   :init
   (bufler-mode 1)
-
   :config
   (custom-set-variables '(bufler-workspace-prefix-abbreviation '("\\`Workspace: " . ""))))
 
