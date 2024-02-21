@@ -21,7 +21,10 @@
 (use-package copilot
   :elpaca (:host github :repo "copilot-emacs/copilot.el" :files ("dist" "*.el"))
   :hook ((prog-mode . copilot-mode) (org-mode . copilot-mode))
-  :config (add-to-list 'copilot-indentation-alist '(org-mode 2))
+  :init
+  (setq copilot-indent-offset-warning-disable t)
+  :config
+  (add-to-list 'copilot-indentation-alist '(org-mode 2))
   :ensure t)
 
 (provide 'np-copilot)
