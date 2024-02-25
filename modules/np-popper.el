@@ -13,4 +13,6 @@
           "\\*cargo-test\\*"))
   :config
   (popper-mode +1))
+
+(provide 'np-popper)
 ;;; popper.el ends here
