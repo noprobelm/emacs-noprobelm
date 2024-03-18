@@ -39,5 +39,10 @@
 
 (use-package poetry)
 
+(use-package python-black
+  :demand t
+  :after python
+  :hook (python-mode . python-black-on-save-mode-enable-dwim))
+
 (provide 'np-python)
 ;;; np-python.el ends here.
