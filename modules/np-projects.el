@@ -45,7 +45,7 @@
     (let ((selection (helm :sources (helm-build-sync-source "Projectile Projects"
                                       :candidates projectile-known-projects
                                       :fuzzy-match t)
-                           :buffer "*helm test*")))
+                           :buffer "*Project Selection*")))
       (when selection (tab-bar-new-tab-to -1)
             (projectile-switch-project-by-name selection)
             (bufler-workspace-focus-buffer (current-buffer))
