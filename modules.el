@@ -33,4 +33,5 @@
 (require 'np-copilot)
 (require 'np-modeline)
 (require 'np-popper)
+(require 'np-parrot)
 ;;; modules.el ends here.
