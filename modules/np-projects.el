@@ -40,6 +40,7 @@
   (setq projectile-completion-system 'helm)
   (setq projectile-indexing-method 'alien)
   (setq projectile-sort-order 'recently-active)
+  (setq projectile-switch-project-action 'dired-jump)
   (defun np/switch-project ()
     (interactive)
     (let ((selection (helm :sources (helm-build-sync-source "Projectile Projects"
