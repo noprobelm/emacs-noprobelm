@@ -90,7 +90,7 @@
     "m m g" 'org-mark-ring-goto
     "m q" 'org-set-tags-command
 
-    "o -" 'dired-jump-other-window
+    "o -" 'dired-jump
 
     ;; Open things
     "." '(helm-find-files :wk "Open File")
