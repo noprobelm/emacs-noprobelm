@@ -7,6 +7,7 @@
   (general-create-definer spc-leader-key
     :states '(normal visual)
     :prefix "SPC")
+
   (spc-leader-key :states '(normal visual)
     ;; General
     ":" '(helm-M-x :wk "M-x")
@@ -107,7 +108,10 @@
     "c q" '(eglot-code-action-quickfix :wk "Quickfix")
     "c i" '(eglot-code-action-inline :wk "Inline")
     "c f" '(eglot-format-buffer :wk "Format Buffer")
-    "/" '(comment-dwim :wk "Toggle Comment"))
+    "/" '(comment-dwim :wk "Toggle Comment")
+
+    "r ]" '(parrot-rotate-prev-word-at-point :wk "Parrot rotate prev")
+    "r [" '(parrot-rotate-next-word-at-point :wk "Parrot rotate next"))
 
   ;; Copilot completion
   (general-define-key
@@ -116,7 +120,8 @@
 
   (general-define-key
    :keymaps '(normal visual)
-   "C-`" 'popper-toggle))
+   "C-`" 'popper-toggle)
+)
 
 (provide 'np-keybinds)
 ;;; np-keybinds.el ends here.

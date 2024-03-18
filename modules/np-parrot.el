@@ -4,6 +4,8 @@
 
 (use-package parrot
   :config
+  (add-to-list 'parrot-rotate-dict
+               '(:rot ("&&" "||")))
   (parrot-mode))
 
 (provide 'np-parrot)
