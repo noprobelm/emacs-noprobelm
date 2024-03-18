@@ -107,9 +107,7 @@
     "c q" '(eglot-code-action-quickfix :wk "Quickfix")
     "c i" '(eglot-code-action-inline :wk "Inline")
     "c f" '(eglot-format-buffer :wk "Format Buffer")
-    "/" '(comment-dwim :wk "Toggle Comment")
-
-    )
+    "/" '(comment-dwim :wk "Toggle Comment"))
 
   ;; Copilot completion
   (general-define-key
