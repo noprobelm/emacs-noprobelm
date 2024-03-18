@@ -33,9 +33,7 @@
 (use-package apheleia
   :after python
   :init
-  (add-hook 'python-base-mode-hook #'apheleia-mode)
-  (evil-define-key* 'normal python-base-mode-map
-    (kbd "<leader> m f") #'("format" . apheleia-format-buffer)))
+  (add-hook 'python-base-mode-hook #'apheleia-mode))
 
 (use-package poetry)
 
