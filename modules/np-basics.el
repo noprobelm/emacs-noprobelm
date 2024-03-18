@@ -6,10 +6,6 @@
 
 (setq inhibit-startup-message t)
 (setq backup-directory-alist `(("." . "~/.saves")))
-(setq delete-old-versions -1)
-(setq version-control t)
-(setq vc-make-backup-files t)
-(setq auto-save-file-name-transforms '((".*" "~/.config/emacs/auto-save-list/" t)))
 
 (setq scroll-conservatively 101)
 (global-hl-line-mode 1)
