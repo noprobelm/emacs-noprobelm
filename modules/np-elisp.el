@@ -3,7 +3,7 @@
 ;;; Code:
 (use-package elisp-mode
   :after evil
-  :elpaca nil
+  :ensure nil
   :init
   (defun np/elisp-mode-setup ()
     (setq indent-tabs-mode nil)
@@ -34,7 +34,7 @@
   :after elisp-mode)
 
 (use-package erefactor
-  :elpaca (:type git :host github :repo "mhayashi1120/Emacs-erefactor")
+  :ensure (:type git :host github :repo "mhayashi1120/Emacs-erefactor")
   :hook (emacs-lisp-mode . erefactor-lazy-highlight-turn-on))
 
 (use-package page-break-lines
@@ -48,7 +48,7 @@
 
 (use-package outline
   :after evil
-  :elpaca nil
+  :ensure nil
   :hook (emacs-lisp-mode . outline-minor-mode))
 
 (provide 'np-elisp)
