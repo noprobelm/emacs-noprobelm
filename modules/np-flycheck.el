@@ -14,13 +14,13 @@
   :hook (flycheck-mode . flycheck-rust-setup))
 
 (use-package flymake
-  :elpaca nil
+  :ensure nil
   :after evil
   :config
   (setq elisp-flymake-byte-compile-load-path load-path))
 
 (use-package ispell
-  :elpaca nil
+  :ensure nil
   :config
   (setq ispell-program-name "hunspell")
   (setq ispell-dictionary "en_US")
