@@ -6,7 +6,7 @@
 (defconst np/module-dir (expand-file-name "modules" np/config-dir))
 (setq custom-file (expand-file-name "custom.el" np/config-dir))
 
-(defvar elpaca-installer-version 0.6)
+(defvar elpaca-installer-version 0.7)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
 (defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
 (defvar elpaca-repos-directory (expand-file-name "repos/" elpaca-directory))
