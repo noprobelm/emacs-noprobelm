@@ -6,7 +6,7 @@
   (helm-mode 1))
 
 (use-package corfu
-  :elpaca (:files (:defaults "extensions/corfu-info.el" "extensions/corfu-history.el" "extensions/corfu-popupinfo.el"))
+  :ensure (:files (:defaults "extensions/corfu-info.el" "extensions/corfu-history.el" "extensions/corfu-popupinfo.el"))
   :hook
   (prog-mode . corfu-mode)
   (text-mode . corfu-mode)

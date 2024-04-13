@@ -5,13 +5,13 @@
 (use-package jsonrpc :ensure t)
 
 (use-package s
-  :elpaca (:host github :repo "magnars/s.el")
+  :ensure (:host github :repo "magnars/s.el")
   ;; :files ("s.el"))
-  :ensure t)
+  )
 
 (use-package dash
-    :elpaca (:host github :repo "magnars/dash.el");; :files ("dash.el"))
-    :ensure t)
+    :ensure (:host github :repo "magnars/dash.el");; :files ("dash.el"))
+    )
 
 (use-package editorconfig
     :ensure t
@@ -19,13 +19,12 @@
     (editorconfig-mode 1))
 
 (use-package copilot
-  :elpaca (:host github :repo "copilot-emacs/copilot.el" :files ("dist" "*.el"))
+  :ensure (:host github :repo "copilot-emacs/copilot.el" :files ("dist" "*.el"))
   :hook ((prog-mode . copilot-mode) (org-mode . copilot-mode))
   :init
   (setq copilot-indent-offset-warning-disable t)
   :config
-  (add-to-list 'copilot-indentation-alist '(org-mode 2))
-  :ensure t)
+  (add-to-list 'copilot-indentation-alist '(org-mode 2)))
 
 (provide 'np-copilot)
 ;;; np-copilot.el ends here.
