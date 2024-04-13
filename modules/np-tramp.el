@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package tramp
-  :elpaca nil
+  :ensure nil
   :init
   (setq debug-ignored-errors
         (cons 'remote-file-error debug-ignored-errors))

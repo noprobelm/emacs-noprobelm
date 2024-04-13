@@ -6,7 +6,7 @@
   ob-rust)
 
 (use-package org
-  :elpaca nil
+  :ensure nil
   :init
   (setq
    org-agenda-files (list (expand-file-name "org/" np/workshop-dir))

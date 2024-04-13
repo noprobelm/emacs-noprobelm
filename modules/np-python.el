@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package python
-  :elpaca nil
+  :ensure nil
   :after eglot
   :init
   (add-hook 'python-base-mode-hook #'eglot-ensure)

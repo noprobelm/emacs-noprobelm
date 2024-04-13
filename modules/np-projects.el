@@ -8,7 +8,7 @@
   (custom-set-variables '(bufler-workspace-prefix-abbreviation '("\\`Workspace: " . ""))))
 
 (use-package tab-bar
-  :elpaca nil
+  :ensure nil
   :init
   (tab-bar-mode)
   (tab-bar-rename-tab "Default" 1)
