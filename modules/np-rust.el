@@ -1,4 +1,4 @@
-;;; np-python.el --- Modules -*- lexical-binding: t; -*-
+;;; np-rust.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 (use-package rustic
