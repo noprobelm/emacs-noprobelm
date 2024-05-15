@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package eglot
+  :ensure nil
   :init
   (setq eglot-stay-out-of '(eldoc))
 

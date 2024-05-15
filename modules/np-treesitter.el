@@ -54,6 +54,16 @@
   (treesit-auto-add-to-auto-mode-alist 'all)
   (global-treesit-auto-mode))
 
+(use-package tree-sitter
+  :if (and (version< emacs-version "29")
+           (string= "x86_64" (car (split-string system-configuration "-")))))
+
+(use-package treesit-auto
+  :custom
+  (treesit-auto-install 'prompt)
+  :config
+  (global-treesit-auto-mode))
+
 (provide 'np-treesitter)
 
-;;; np-treesitter.el ends here.
+;;; np-treeritter.el ends here.

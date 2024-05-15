@@ -6,6 +6,8 @@
 
 (setq inhibit-startup-message t)
 (setq backup-directory-alist `(("." . "~/.saves")))
+(setq native-comp-async-report-warnings-errors nil)
+
 
 (setq scroll-conservatively 101)
 (global-hl-line-mode 1)
