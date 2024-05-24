@@ -11,6 +11,7 @@
   (prog-mode . corfu-mode)
   (text-mode . corfu-mode)
   :init
+  (setq corfu-auto t)
   (setq corfu-auto-delay 0.2)
   (setq corfu-auto-prefix 1)
   (setq corfu-popupinfo-delay 0.5))

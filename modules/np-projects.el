@@ -74,7 +74,7 @@
 	   entry (id "2a7a427f-cd10-4a31-8ffc-94928e550ea1")
 	   "* APPT %? %^G")
 	  ("i" "Idealogue"
-	   entry (id "f8fb678e-d796-4a0e-8c74-e114b115d012")
+	   entry (id "a07f8de0-be91-4a29-9480-849cd43dbf94")
 	   "* IDEA %?%^g\n\ntodo recorded at %U")
 	  ("t" "${name} todo" entry
 	   (file+headline +org-capture-projects-file "${name}")

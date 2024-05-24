@@ -19,6 +19,7 @@
     (editorconfig-mode 1))
 
 (use-package copilot
+  :disabled
   :ensure (:host github :repo "copilot-emacs/copilot.el" :files ("dist" "*.el"))
   :hook ((prog-mode . copilot-mode) (org-mode . copilot-mode))
   :init
