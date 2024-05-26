@@ -21,7 +21,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (add-to-list 'default-frame-alist
-	     '(font . "JetBrains Mono-16"))
+	     '(font . "JetBrains Mono-20"))
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)

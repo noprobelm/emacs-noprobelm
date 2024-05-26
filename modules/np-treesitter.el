@@ -58,12 +58,6 @@
   :if (and (version< emacs-version "29")
            (string= "x86_64" (car (split-string system-configuration "-")))))
 
-(use-package treesit-auto
-  :custom
-  (treesit-auto-install 'prompt)
-  :config
-  (global-treesit-auto-mode))
-
 (provide 'np-treesitter)
 
 ;;; np-treeritter.el ends here.
