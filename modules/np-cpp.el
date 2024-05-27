@@ -1,4 +1,4 @@
-;;; np-python.el --- Modules -*- lexical-binding: t; -*-
+;;; np-cpp.el --- Modules -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 
