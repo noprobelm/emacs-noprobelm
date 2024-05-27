@@ -23,6 +23,7 @@
 (require 'np-treesitter)
 (require 'np-python)
 (require 'np-rust)
+(require 'np-cpp)
 (require 'np-dashboard)
 (require 'np-help)
 (require 'np-which-key)
