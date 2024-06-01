@@ -5,7 +5,6 @@
   :ensure nil
   :init
   (setq eglot-stay-out-of '(eldoc))
-
   :config
   (defun eglot-rename (newname)
     "Rename the current symbol to NEWNAME."
@@ -21,6 +20,7 @@
      (jsonrpc-request (eglot--current-server-or-lose)
                       :textDocument/rename `(,@(eglot--TextDocumentPositionParams)
                                              :newName ,newname))
+  
      current-prefix-arg)))
 
 (provide 'np-lsp)
