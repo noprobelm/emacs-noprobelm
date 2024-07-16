@@ -23,6 +23,7 @@
 (require 'np-treesitter)
 (require 'np-python)
 (require 'np-rust)
+(require 'np-wgsl)
 (require 'np-cpp)
 (require 'np-java)
 (require 'np-dashboard)
