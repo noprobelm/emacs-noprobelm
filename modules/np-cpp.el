@@ -11,8 +11,7 @@
   (add-hook 'c-mode-hook #'eglot-ensure)
   (add-hook 'c-ts-mode-hook #'eglot-ensure)
   (add-hook 'c++-mode-hook #'eglot-ensure)
-  (add-hook 'c++-ts-mode-hook #'eglot-ensure)
-  )
+  (add-hook 'c++-ts-mode-hook #'eglot-ensure))
 
 (provide 'np-cpp)
 ;;; np-cpp.el ends here.
