@@ -13,5 +13,7 @@
   (add-hook 'c++-mode-hook #'eglot-ensure)
   (add-hook 'c++-ts-mode-hook #'eglot-ensure))
 
+(use-package clang-format)
+
 (provide 'np-cpp)
 ;;; np-cpp.el ends here.
